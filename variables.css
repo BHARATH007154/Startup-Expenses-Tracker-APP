@@ -1,0 +1,70 @@
+/* ============================================
+   variables.css
+   All CSS custom properties (design tokens)
+   for the SpendWise dark theme.
+   Import this once in main.jsx or App.jsx.
+   ============================================ */
+
+:root {
+  /* Backgrounds */
+  --bg-main:    #0d0f1a;   /* page background */
+  --bg-surface: #131627;   /* header / sidebar */
+  --bg-card:    #1a1e35;   /* cards and panels */
+  --bg-input:   #0d0f1a;   /* input fields */
+
+  /* Borders */
+  --border: #252a45;
+
+  /* Brand accent */
+  --accent:      #6c63ff;
+  --accent-soft: rgba(108, 99, 255, 0.15);
+
+  /* Semantic colors */
+  --teal:      #2dd4bf;
+  --teal-soft: rgba(45, 212, 191, 0.12);
+
+  --red:      #f87171;
+  --red-soft: rgba(248, 113, 113, 0.12);
+
+  --amber:      #fbbf24;
+  --amber-soft: rgba(251, 191, 36, 0.12);
+
+  --green:      #4ade80;
+  --green-soft: rgba(74, 222, 128, 0.12);
+
+  /* Text */
+  --text-primary:   #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
+
+  /* Spacing */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* Font */
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ── Global reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+input, select, textarea {
+  font-family: var(--font);
+}

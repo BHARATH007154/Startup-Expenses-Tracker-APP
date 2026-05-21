@@ -1,0 +1,109 @@
+/* ============================================
+   ExpenseList.css
+   Styles for the expense list tab
+   ============================================ */
+
+/* Search + sort row */
+.list-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 2;
+  min-width: 200px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+}
+
+.sort-select {
+  flex: 1;
+  min-width: 160px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-select option {
+  background: var(--bg-card);
+}
+
+/* Category filter pill buttons */
+.category-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 400;
+  transition: all 0.15s;
+}
+
+.filter-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--text-muted);
+}
+
+.filter-btn.active {
+  font-weight: 600;
+}
+
+/* Results count + total line */
+.results-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.results-total {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* The list of rows */
+.expense-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.empty-icon  { font-size: 40px; margin-bottom: 12px; }
+.empty-title { font-size: 15px; color: var(--text-primary); margin-bottom: 6px; }
+.empty-sub   { font-size: 13px; color: var(--text-muted); }
