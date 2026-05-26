@@ -36,17 +36,13 @@ export default function App() {
   // ── Calculate total for the header chip ──
   const total = expenses.reduce((sum, e) => sum + e.amount, 0)
 
-  // ── Add a new expense ──
-  // This function is passed as a PROP to <AddExpenseForm />
-  // When the form is submitted, it calls this function with the new expense object
+
   function handleAddExpense(newExpense) {
     setExpenses([newExpense, ...expenses]) // add to front of array
     setShowForm(false)
     setActiveTab('expenses')              // go to list to see it
   }
 
-  // ── Delete an expense by its id ──
-  // This is passed as a PROP to <ExpenseList /> → <ExpenseRow />
   function handleDeleteExpense(id) {
     // .filter() keeps every expense that does NOT match the deleted id
     setExpenses(expenses.filter((e) => e.id !== id))
@@ -117,8 +113,7 @@ export default function App() {
           ))}
         </div>
 
-        {/* ── TAB CONTENT ──
-            Show Dashboard OR ExpenseList depending on activeTab */}
+      
         {activeTab === 'dashboard' && (
           <Dashboard expenses={expenses} />
         )}
