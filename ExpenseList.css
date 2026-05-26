@@ -1,9 +1,4 @@
-/* ============================================
-   ExpenseList.css
-   Styles for the expense list tab
-   ============================================ */
 
-/* Search + sort row */
 .list-controls {
   display: flex;
   gap: 10px;
