@@ -1,5 +1,4 @@
 
-
 import './StatCard.css'
 
 export default function StatCard({ icon, label, value, color, bgColor }) {
