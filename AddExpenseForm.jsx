@@ -1,5 +1,4 @@
 
-
 import { useState } from 'react'
 import { CATEGORIES } from './CategoryBadge.jsx'
 import './AddExpenseForm.css'
@@ -17,9 +16,7 @@ export default function AddExpenseForm({ onAdd, onCancel }) {
   // ── Error message state ──
   const [error, setError] = useState('')
 
-  // ── Called every time user types in ANY field ──
-  // e.target.name  = the name="" attribute of the input
-  // e.target.value = the new value the user typed
+
   function handleChange(e) {
     setForm({
       ...form,                     // keep all existing field values
