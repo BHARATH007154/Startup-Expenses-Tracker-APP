@@ -1,18 +1,4 @@
-// ============================================
-// components/Dashboard.jsx
-//
-// Shows summary statistics and a spending
-// breakdown bar chart by category.
-//
-// REACT CONCEPTS USED HERE:
-//   - props          → receives expenses array from App.jsx
-//   - .reduce()      → calculates totals
-//   - .map()         → renders each category bar
-//   - conditional rendering → shows tip if no data yet
-//
-// NO useState here — Dashboard only reads data,
-// it never changes it. Pure display component.
-// ============================================
+
 
 import StatCard from './StatCard.jsx'
 import { getCategoryConfig } from './CategoryBadge.jsx'
