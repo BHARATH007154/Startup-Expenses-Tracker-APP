@@ -1,5 +1,4 @@
 
-
 import StatCard from './StatCard.jsx'
 import { getCategoryConfig } from './CategoryBadge.jsx'
 import './Dashboard.css'
