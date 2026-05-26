@@ -1,19 +1,4 @@
-// ============================================
-// components/ExpenseList.jsx
-//
-// Shows the full list of expenses with:
-//   - Search bar
-//   - Category filter buttons
-//   - Sort dropdown
-//   - The list of <ExpenseRow /> items
-//
-// REACT CONCEPTS USED HERE:
-//   - useState   → search text, active category, sort order
-//   - .filter()  → narrows down the expenses array
-//   - .map()     → renders one <ExpenseRow> per expense
-//   - conditional rendering → empty state message
-//   - props      → receives expenses array + onDelete from App.jsx
-// ============================================
+
 
 import { useState } from 'react'
 import { CATEGORIES } from './CategoryBadge.jsx';
