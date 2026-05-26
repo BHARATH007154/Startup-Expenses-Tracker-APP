@@ -1,15 +1,4 @@
-// ============================================
-// components/CategoryBadge.jsx
-//
-// A small coloured pill that shows the category
-// of an expense (e.g. "💻 Software").
-//
-// REACT CONCEPT: Props
-//   Receives one prop: name (the category string)
-//   Looks up the matching color from CATEGORIES config.
-//
-// Used inside: ExpenseRow, ExpenseList filter buttons
-// ============================================
+
 
 import './CategoryBadge.css'
 
