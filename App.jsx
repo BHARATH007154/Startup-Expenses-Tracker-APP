@@ -1,18 +1,4 @@
-// ============================================
-// App.jsx
-// The ROOT component of the entire app.
-//
-// WHAT IT DOES:
-//   - Holds the expenses array in useState
-//   - Passes data DOWN to child components via props
-//   - Decides which tab (Dashboard / Expenses) to show
-//
-// REACT CONCEPTS USED HERE:
-//   - useState         → remembers our data
-//   - props            → shares data with child components
-//   - conditional rendering → shows one tab or another
-//   - event handling   → add / delete / switch tabs
-// ============================================
+
 
 import { useState } from 'react'
 import './App.css'
