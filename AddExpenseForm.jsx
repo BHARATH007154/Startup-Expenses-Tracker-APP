@@ -1,20 +1,4 @@
-// ============================================
-// components/AddExpenseForm.jsx
-//
-// The form used to add a new expense.
-//
-// REACT CONCEPTS USED HERE:
-//   - useState    → tracks what the user types
-//   - onChange    → updates state on every keystroke
-//   - onSubmit    → handles form submission
-//   - props       → onAdd + onCancel come from App.jsx
-//
-// HOW DATA FLOWS:
-//   User types → onChange fires → setForm() updates state
-//   User clicks "Add" → handleSubmit runs → calls onAdd(newExpense)
-//   onAdd is a function passed from App.jsx via props
-//   App.jsx then adds the expense to its own state
-// ============================================
+
 
 import { useState } from 'react'
 import { CATEGORIES } from './CategoryBadge.jsx'
