@@ -1,5 +1,4 @@
 
-
 import { useState } from 'react'
 import { CATEGORIES } from './CategoryBadge.jsx';
 import ExpenseRow from './ExpenseRow.jsx'
@@ -106,9 +105,9 @@ export default function ExpenseList({ expenses, onDelete }) {
         <div className="expense-rows">
           {sorted.map((expense) => (
             <ExpenseRow
-              key={expense.id}        // React needs a unique key for each list item
-              expense={expense}       // pass the full expense object as a prop
-              onDelete={onDelete}     // pass the delete function as a prop
+              key={expense.id}        
+              expense={expense}       
+              onDelete={onDelete}     
             />
           ))}
         </div>
